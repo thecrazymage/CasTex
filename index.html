@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="This work investigates text-to-texture synthesis using diffusion models to generate physically-based texture maps.">
+  <meta property="og:title" content="CasTex: Cascaded Text-to-Texture Synthesis via Explicit Texture Maps and Physically-Based Shading"/>
+  <meta property="og:description" content="This work investigates text-to-texture synthesis using diffusion models to generate physically-based texture maps."/>
+  <meta property="og:url" content="https://thecrazymage.github.io/CasTex/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="https://thecrazymage.github.io/CasTex/static/images/teaser.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="CasTex: Cascaded Text-to-Texture Synthesis via Explicit Texture Maps and Physically-Based Shading">
+  <meta name="twitter:description" content="This work investigates text-to-texture synthesis using diffusion models to generate physically-based texture maps.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="https://thecrazymage.github.io/CasTex/static/images/teaser.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="text-to-texture, diffusion models, SDS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CasTex</title>
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CasTex: Cascaded Text-to-Texture Synthesis via Explicit Texture Maps and Physically-Based Shading</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=QJz42PEAAAAJ" target="_blank">Mishan Aliev</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=ru&user=NiPmk8oAAAAJ" target="_blank">Dmitry Baranchuk</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.ru/citations?user=q69zIO0AAAAJ" target="_blank">Kirill Struminsky</a><sup>1,2</sup>
+              </span>
+                  </div>
+
+                 <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>HSE University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup>Yandex Research</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <!-- <br>Conferance name and year -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <!-- <a href="https://arxiv.org/pdf/2412.01819" target="_blank" -->
+                        <a target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (coming soon)</span>
+                      </a>
+                    </span>
+
+<!--                    &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
+<!--                    <span class="link-block">-->
+<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                      class="external-link button is-normal is-rounded is-dark">-->
+<!--                      <span class="icon">-->
+<!--                        <i class="fas fa-file-pdf"></i>-->
+<!--                      </span>-->
+<!--                      <span>Supplementary</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <!-- <a href="https://thecrazymage.github.io/CasTex/" target="_blank" -->
+                    <a target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (coming soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="TODO" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<div style="text-align: center; margin-bottom: 2rem; margin-top: -2rem;">
+  <video width="60%" autoplay muted loop>
+    <source src="static/videos/army.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2"  style="margin-top: -1rem;">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work investigates text-to-texture synthesis using diffusion models to generate physically-based texture maps.
+            We aim to achieve realistic model appearances under varying lighting conditions.
+            A prominent solution for the task is score distillation sampling.
+            It allows recovering a complex texture using gradient guidance given a differentiable rasterization and shading pipeline.
+            However, in practice, the aforementioned solution in conjunction with the widespread latent diffusion models produces severe visual artifacts and requires additional regularization such as implicit texture parameterization.
+            As a more direct alternative, we propose an approach using cascaded diffusion models for texture synthesis (CasTex).
+            In our setup, score distillation sampling yields high-quality textures out-of-the-box.
+            In particular, we were able to omit implicit texture parameterization in favor of an explicit parameterization to improve the procedure.
+            In the experiments, we show that our approach significantly outperforms state-of-the-art optimization-based solutions on public texture synthesis benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2 has-text-centered" style="margin-top: 2rem; margin-bottom: 1rem;">Method Overview</h2>
+    </div>
+    
+    <div class="hero-body has-text-centered">
+      <img src="static/images/method.png" alt="CasTex method results" width="75%" />
+      <div class="content has-text-justified">
+          <strong class="is-size-5.5">Overall pipeline.</strong> Our method consists of two stages. 
+          On the first stage, given a 3D mesh and a prompt our method employs a differentiable rendering pipeline to generate random views of the model under various lighting.
+          We update the randomly initialized model texture using Score Distillation Sampling (SDS).
+          On the second stage, refine the texture from the first stage using SDS with a super-resolution diffusion model.
+          For the same view and lighting, we render two frames: a frame with the fixed texture taken from the first step and a frame with a current texture.
+          Using the former frame as the condition, we back-propagate the SDS gradients through the latter frame.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method -->
+
+
+<!-- Qualitative comparison video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2 has-text-centered" style="margin-bottom: 1rem;">Comparison with competing methods</h2>
+    </div>
+    
+    <div style="text-align: center;">
+      <video width="80%" autoplay muted loop>
+        <source src="static/videos/comperison.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="content has-text-justified">
+      <strong class="is-size-5.5">Qualitative comparison.</strong>
+      We synthesized textures for models from the Objaverse dataset using the proposed approach and a number of recent competing methods.
+      Our method generates seamless textures with softer colors compared with latent diffusion-based approaches.
+    </div>
+  </div>
+</section>
+<!-- End qualitative comparison video -->
+
+<!-- Human evaluation -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2 has-text-centered" style="margin-bottom: 1rem; margin-top: 3rem;">Human evaluation</h2>
+    </div>
+    
+    <div class="hero-body has-text-centered">
+      <img src="static/images/sbs_results.png" alt="CasTex method results" width="100%" />
+      <div class="content has-text-justified">
+          <strong class="is-size-5.5">User preference study.</strong>
+          Human preference study comparing our method with competing optimization based and back-projection baselines.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End human evaluation -->
+
+<!-- Automated metrics -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="container is-max-desktop">
+      <h2 class="title is-2 has-text-centered">Automated Metrics</h2>
+    </div>
+    
+    <div class="hero-body has-text-centered">
+      <img src="static/images/metrics.jpg" alt="CasTex method results" width="60%" />
+      <div class="content has-text-justified">
+          <strong class="is-size-5.5">Quantitative comparison.</strong>
+          Comparison of FID and KID scores for different text-to-texture generation methods.
+          Notably, even with the smallest diffusion model, our method outperforms optimization-based baselines.
+          As expected, the super-resolution stage improves the results for both stages.
+          Surprisingly, in our evaluation, the older back-projection-based method outperforms the optimization-based method and is only rivaled by our largest setup.
+          We use NVIDIA A100 80GB for time measurements and generate textures with a resolution of 1024x1024 pixels.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End automated metrics -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      <!-- @article{voronov2024switti,
+        title={Switti: Designing Scale-Wise Transformers for Text-to-Image Synthesis}, 
+        author={Anton Voronov and Denis Kuznedelev and Mikhail Khoroshikh and Valentin Khrulkov and Dmitry Baranchuk},
+        year={2024},
+        eprint={2412.01819},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2412.01819}
+      } -->
+      Cooming soon
+    </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+<!-- End video-->
+<div style="text-align: center; margin-bottom: 2rem; margin-top: -2rem;">
+  <video width="30%" autoplay muted loop>
+    <source src="static/videos/moo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<!-- End end video -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

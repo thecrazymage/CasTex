@@ -8,7 +8,7 @@
   <meta property="og:title" content="CasTex: Cascaded Text-to-Texture Synthesis via Explicit Texture Maps and Physically-Based Shading"/>
   <meta property="og:description" content="This work investigates text-to-texture synthesis using diffusion models to generate physically-based texture maps."/>
   <meta property="og:url" content="https://thecrazymage.github.io/CasTex/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X630-->
   <meta property="og:image" content="https://thecrazymage.github.io/CasTex/static/images/teaser.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -16,7 +16,7 @@
 
   <meta name="twitter:title" content="CasTex: Cascaded Text-to-Texture Synthesis via Explicit Texture Maps and Physically-Based Shading">
   <meta name="twitter:description" content="This work investigates text-to-texture synthesis using diffusion models to generate physically-based texture maps.">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200X600-->
   <meta name="twitter:image" content="https://thecrazymage.github.io/CasTex/static/images/teaser.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
@@ -68,17 +68,17 @@
 
                  <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>HSE University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup>Yandex Research</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <!-- <br>Conferance name and year -->
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/abs/2504.06856" target="_blank"
-                        <a target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
+                      <div class="publication-links">
+                        <div class="is-size-5 publication-authors" style="margin-bottom: 1rem;">
+                          <span style="color: #3273dc; font-weight: bold;">WACV 2026</span>
+                      </div>
+
+                      <!-- Arxiv PDF link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2504.06856" target="_blank" class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
@@ -86,22 +86,9 @@
                       </a>
                     </span>
 
-<!--                    &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
-<!--                    <span class="link-block">-->
-<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
-<!--                      class="external-link button is-normal is-rounded is-dark">-->
-<!--                      <span class="icon">-->
-<!--                        <i class="fas fa-file-pdf"></i>-->
-<!--                      </span>-->
-<!--                      <span>Supplementary</span>-->
-<!--                    </a>-->
-<!--                  </span>-->
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/thecrazymage/CasTex/" target="_blank"
-                    <a target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                    <a href="https://github.com/thecrazymage/CasTex/" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -109,16 +96,17 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="TODO" target="_blank"
+                <!-- Google Colab link -->
+                <span class="link-block">
+                  <a href="https://thecrazymage.github.io/CasTex/" target="_blank" rel="noopener noreferrer"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fab fa-google"></i>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
+                  <span>Google Colab</span>
+                  </a>
+                </span>
+
             </div>
           </div>
         </div>
@@ -129,8 +117,8 @@
 
 <!-- Teaser video-->
 <div style="text-align: center; margin-bottom: 2rem; margin-top: -2rem;">
-  <video width="60%" autoplay muted loop>
-    <source src="static/videos/army.mp4" type="video/mp4">
+  <video width="60%" autoplay muted loop playsinline>
+    <source src="static/videos/herd.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -183,7 +171,6 @@
 </section>
 <!-- End method -->
 
-
 <!-- Qualitative comparison video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -191,16 +178,13 @@
       <h2 class="title is-2 has-text-centered" style="margin-bottom: 1rem;">Comparison with competing methods</h2>
     </div>
     
-    <div style="text-align: center;">
-      <video width="80%" autoplay muted loop>
-        <source src="static/videos/comperison.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="has-text-centered">
+      <img src="static/images/comparison.png" alt="CasTex method results" width="80%" />
     </div>
 
     <div class="content has-text-justified">
       <strong class="is-size-5.5">Qualitative comparison.</strong>
-      We synthesized textures for models from the Objaverse dataset using the proposed approach and a number of recent competing methods.
+      We synthesized textures for models from the Objaverse dataset using the proposed approach and several recent competing methods.
       Our method generates seamless textures with softer colors compared with latent diffusion-based approaches.
     </div>
   </div>
@@ -215,10 +199,10 @@
     </div>
     
     <div class="hero-body has-text-centered">
-      <img src="static/images/sbs_results.png" alt="CasTex method results" width="100%" />
+      <img src="static/images/sbs_results.png" alt="CasTex method results" width="150%" />
       <div class="content has-text-justified">
           <strong class="is-size-5.5">User preference study.</strong>
-          Human preference study comparing our method with competing optimization based and back-projection baselines.
+          Human preference study comparing our method with optimization‑based and back‑projection baselines.
       </div>
     </div>
   </div>
@@ -233,7 +217,7 @@
     </div>
     
     <div class="hero-body has-text-centered">
-      <img src="static/images/metrics.jpg" alt="CasTex method results" width="60%" />
+      <img src="static/images/metrics.png" alt="CasTex method results" width="60%" />
       <div class="content has-text-justified">
           <strong class="is-size-5.5">Quantitative comparison.</strong>
           Comparison of FID and KID scores for different text-to-texture generation methods.
@@ -267,7 +251,7 @@
 <!-- End video-->
 <div style="text-align: center; margin-bottom: 2rem; margin-top: -2rem;">
   <video width="30%" autoplay muted loop>
-    <source src="static/videos/moo.mp4" type="video/mp4">
+    <source src="static/videos/dancing.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>

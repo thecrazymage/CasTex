@@ -1,0 +1,20 @@
+# System
+.DS_Store
+
+# Python & Dependencies
+__pycache__/
+*.requirements.txt
+
+# Logs & Temporary Files
+logs/
+cached_prompts*/
+draft/
+
+# Blender & Assets
+blender*/
+
+# Objaverse Eval Data & Renders
+objaverse_eval/assets/pt_inception-2015-12-05-6726825d.pth
+objaverse_eval/objaverse_data
+objaverse_eval/renders
+objaverse_eval/temp_objaverse_cache

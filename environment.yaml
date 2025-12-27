@@ -1,0 +1,32 @@
+name: castex
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - ffmpeg=8.0.0
+  - pyarrow=22.0.0
+  - pip=25.3
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cu124
+    - torch==2.5.0
+    - triton==3.1.0
+    - torchvision==0.20.0
+    - numpy==2.2.6
+    - sentencepiece==0.2.0
+    - diffusers[torch]==0.30.3
+    - transformers==4.45.2
+    - accelerate==1.12.0
+    - matplotlib==3.10.7
+    - scipy==1.16.3
+    - scikit-learn==1.7.2
+    - bitsandbytes==0.45.1
+    - trimesh==4.10.0
+    - xatlas==0.0.11
+    - objaverse==0.1.7
+    - envlight==0.1.0
+    - mathutils==3.3.0
+    - opencv-python==4.12.0.88
+    - imageio[opencv,ffmpeg]==2.37.2
+    - imageio-ffmpeg==0.6.0
+    - git+https://github.com/NVlabs/nvdiffrast.git@v0.3.5

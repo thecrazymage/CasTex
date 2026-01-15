@@ -39,7 +39,7 @@ If you are interested in collaborating or have any questions, please reach out t
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Benchmark on Objaverse subset](#benchmark-on-objaverse-subset)
-- [Acknowledgement](#acknowledgement)
+- [Acknowledgements](#acknowledgements)
 - [Citation](#citation)
 - [License](#license)
 

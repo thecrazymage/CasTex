@@ -11,7 +11,7 @@ PROMPT="A cow in a suit"
 
 python main.py \
     --mesh_location "assets/spot.obj" \
-    --prompt "$CURRENT_PROMPT" \
+    --prompt "$PROMPT" \
     --num_steps_i 500 \
     --num_steps_ii 1000 \
     --guidance_scale_i 25 \
